@@ -22,6 +22,10 @@ function Home() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (originPlace === "" || destinationPlace === "") {
+      alert("Fill in details");
+      return;
+    }
     const waypoints = stopPlace === "" ? [] : [{ location: stopPlace }];
     dispatch(
       setLocation({
@@ -88,10 +92,10 @@ function Home() {
           </h2>
           <div>
             The distance between
-            <span className="text-bold"> {originPlace} </span>
+            <span className="text-bold"> {journeyDetail.origin} </span>
             and
-            <span className="text-bold"> {destinationPlace} </span>via the
-            seleted route is{" "}
+            <span className="text-bold"> {journeyDetail.destination} </span>via
+            the seleted route is{" "}
             <span className="text-bold">
               {(journeyDetail.distance / 1000).toFixed(3)} kms
             </span>
