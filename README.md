@@ -1,3 +1,7 @@
+# Deployed
+
+https://gmap-graviti.netlify.app/
+
 # Demo
 
 ![walkthrough](walkthrough.gif)
