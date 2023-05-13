@@ -1,0 +1,21 @@
+.autocomplete {
+  width: 100%;
+}
+.autocomplete input {
+  position: relative;
+}
+.autocomplete .suggestions {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+.autocomplete .suggestion {
+  padding: 5px;
+  width: 240px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
