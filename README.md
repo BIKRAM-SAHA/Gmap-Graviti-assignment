@@ -17,6 +17,6 @@
 
 # TODO
 
-- add support for changin means of transport(right now shows results for DRIVING)
+- add support for changing means of transport(right now shows results for DRIVING)
 - enable dynamic form for adding more stop points
 - add support for alternative routes
